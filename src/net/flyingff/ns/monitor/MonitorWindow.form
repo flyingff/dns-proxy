@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="net.flyingff.ns.monitor.MonitorWindow">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="37e8a" class="javax.swing.JLabel" binding="label">
+        <constraints border-constraint="South"/>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="ead06" class="javax.swing.JComboBox" binding="combo" custom-create="true">
+        <constraints border-constraint="North"/>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <grid id="622d7" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="East"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="531d6" class="javax.swing.JProgressBar" binding="progress">
+            <constraints border-constraint="West"/>
+            <properties>
+              <borderPainted value="true"/>
+              <enabled value="true"/>
+              <indeterminate value="false"/>
+              <maximum value="10"/>
+              <orientation value="1"/>
+              <stringPainted value="false"/>
+              <value value="0"/>
+            </properties>
+          </component>
+          <component id="d08db" class="javax.swing.JProgressBar" binding="progress2">
+            <constraints border-constraint="East"/>
+            <properties>
+              <borderPainted value="true"/>
+              <indeterminate value="false"/>
+              <orientation value="1"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="7d7e4" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="13eed" class="javax.swing.JList" binding="list">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <selectionMode value="0"/>
+            </properties>
+          </component>
+          <component id="91b95" class="net.flyingff.ns.monitor.StatisticView" binding="viewer">
+            <constraints border-constraint="South"/>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
